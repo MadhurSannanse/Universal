@@ -1,0 +1,62 @@
+<resources>
+    <!--
+    <string name="app_name">Rashmi Enterprices</string>
+    <string name="nav_header_subtitle">Rashmi Enterprices</string>
+    <string name="Server">http://www.r3infoservices.com/Offline/rashmi_enterprises/</string>-->
+    <!--
+    <string name="app_name">Jyoti Enterprices</string>
+    <string name="nav_header_subtitle">Jyoti Enterprices</string>
+    <string name="Server">http://www.r3infoservices.com/Offline/jyoti_enterprises/</string>-->
+    <!--
+        <string name="app_name">Fine Foods</string>
+        <string name="nav_header_subtitle">Fine Foods Enterprises</string>
+        <string name="Server">http://www.r3infoservices.com/Offline/mahajan/</string>-->
+    <!-- <string name="app_name">Navkar Communication</string>
+    <string name="nav_header_subtitle">Navkar Communication</string>
+    <string name="Server">http://http://www.r3infoservices.com/Offline/navkar/</string>-->
+
+    <string name="app_name">Mobile To Tally</string>
+    <string name="nav_header_subtitle">Mobile To Tally</string>
+    <string name="Server">http://www.r3infoservices.com/Offline/Trueview/</string>
+    <string name="Company_Name">Mobile To Tally</string>
+    <string name="Company_Address"></string>
+    <string name="Version">Version 0.1.9</string>
+    <string name="Bank_Name"></string>
+    <string name="Bank"></string>
+    <string name="Branch_Name"></string>
+    <string name="IFSC_Code"></string>
+    <string name="Account_No"></string>
+    <string name="Bank_Acc_Name"></string>
+
+    <string name="title_activity_login_request">Login Request</string>
+    <string name="title_activity_home_screen">Home Screen</string>
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title"></string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_new_order">New Order</string>
+    <string name="myriad_pro">myriad pro</string>
+    <string name="title_activity_item_display">Item Display</string>
+    <string name="title_activity_confirm_order">Confirm Order</string>
+    <string name="Rs">\u20B9</string>
+    <string name="FCM_PREF">r3.info.universal.mobile.fcm_pref</string>
+    <string name="FCM_TOKEN">r3.info.universal.mobile.fcm_token</string>
+    <string name="title_activity_test_home">TestHome</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_activity_confirm__order">Confirm_Order</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+</resources>

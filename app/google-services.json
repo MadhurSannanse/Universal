@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "438990768027",
+    "firebase_url": "https://universal-mobile-to-tally.firebaseio.com",
+    "project_id": "universal-mobile-to-tally",
+    "storage_bucket": "universal-mobile-to-tally.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438990768027:android:c3bf26bbf0bf24df4cc33e",
+        "android_client_info": {
+          "package_name": "rthree.infotech.universal.mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "438990768027-eej2p0a4dlsnbef59mi5tatli1krccmm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCctjjkFvrfo85Gl0mom7HZqSbotICtrbM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "438990768027-eej2p0a4dlsnbef59mi5tatli1krccmm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

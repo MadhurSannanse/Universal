@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="rthree.infotech.r3infotech.mobile.ItemDisplay"
+    tools:showIn="@layout/activity_item_display">
+
+
+    <LinearLayout
+        android:id="@+id/layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:id="@+id/layout_top"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:background="@color/newmid"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_mid"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:background="@color/newmid"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:id="@+id/layout_mid1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:paddingLeft="30dp"
+                android:paddingRight="20dp"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:id="@+id/mid2_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@string/myriad_pro"
+                        android:gravity="center"
+                        android:text="Select Product"
+                        android:textColor="@color/Text_Color_Green"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mid2_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/select_product"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/box"
+                        android:drawableRight="@drawable/down_arrow"
+                        android:completionHint="Select a Product"
+                        android:completionThreshold="0"
+                        android:gravity="center"
+                        android:hint="Select a Product"
+                        android:popupTheme="@color/Transparent"
+                        android:singleLine="true"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_mid2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/productname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@string/myriad_pro"
+                    android:gravity="center"
+                    android:text="Product Stock"
+                    android:textColor="@color/Text_Color_Green"
+                    android:textSize="14dp"  />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_mid3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.3"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:id="@+id/mid3_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:orientation="vertical"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inputrate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:id="@+id/et_rate"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@string/myriad_pro"
+                            android:gravity="center"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:hint="Rate"
+                            android:maxLines="1"
+                            android:text=""
+                            android:inputType="none"
+                            android:textColor="@color/Text_Color_Green"
+                            android:textSize="17dp" />
+                    </com.google.android.material.textfield.TextInputLayout>>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mid3_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:orientation="vertical"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inputqty"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:id="@+id/et_quantity"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@string/myriad_pro"
+                            android:gravity="center"
+                            android:hint="Quantity"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:text=""
+                            android:textColor="@color/Text_Color_Green"
+                            android:textSize="16dp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_mid4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.4"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:id="@+id/mid4_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:orientation="vertical"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inputscheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:id="@+id/et_scheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@string/myriad_pro"
+                            android:gravity="center"
+                            android:hint="Scheme/Discount"
+                            android:inputType="numberDecimal|numberSigned"
+                            android:maxLines="1"
+                            android:text=""
+                            android:textColor="@color/Text_Color_Green"
+                            android:textSize="17dp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mid4_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:orientation="vertical"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/inputgst"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:id="@+id/et_gst"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:focusable="false"
+                            android:fontFamily="@string/myriad_pro"
+                            android:gravity="center"
+                            android:hint="GST Amount"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:text=""
+                            android:textColor="@color/Text_Color_Green"
+                            android:textSize="17dp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_mid5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputtotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/et_total"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:focusable="false"
+                        android:fontFamily="@string/myriad_pro"
+                        android:gravity="center"
+                        android:hint="Total Amount"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:text=""
+                        android:textColor="@color/Text_Color_Green"
+                        android:textSize="17dp" />
+                </com.google.android.material.textfield.TextInputLayout>>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_mid6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.3"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:id="@+id/mid6_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btn_additem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/add" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mid6_2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btn_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/view" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_bot"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:background="@drawable/wood"
+            android:orientation="vertical"></LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

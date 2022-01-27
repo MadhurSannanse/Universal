@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1185cb</color>
+    <color name="colorPrimaryDark">#304c98</color>
+    <color name="darkblack">#111</color>
+    <color name="colorAccent">#632b6a</color>
+    <color name="Text_Color_Green">#06a10b</color>
+    <color name="Transparent">#00ffffff</color>
+    <color name="Gray">#e8edef</color>
+    <color name="Dark_Gray">#585e60</color>
+    <color name="themegreen">#00ADAC</color>
+    <color name="greentop">#33A532</color>
+    <color name="red">#DC143C</color>
+    <color name="white">#FFFF</color>
+    <color name="bluetheme">#88adde</color>
+    <color name="text_color_blue">#275283</color>
+    <color name="editmode">#00000000</color>
+    <color name="newmid">#e1e1e1</color>
+</resources>

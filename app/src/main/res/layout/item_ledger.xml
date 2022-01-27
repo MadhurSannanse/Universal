@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Transparent"
+    android:minHeight="70dp"
+    android:weightSum="10">
+
+  <LinearLayout
+      android:id="@+id/layout_left"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="7"
+      android:orientation="vertical"
+      android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical">
+
+      <TextView
+          android:id="@+id/txt_partyname"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="sfdsfsfsfs fb sfdfsdfsf sdfd  sfsf sf sdf sff sdfsfdsfsfsfs fb sfdfsdfsf sdfd  sfsf sf sdf sff sdfsfdsfsfsfs fb sfdfsdfsf sdfd  sfsf sf sdf sff sdf   sfdsfsfsfs fb sfdfsdfsf sdfd  sfsf sf sdf sff sdfsfdsfsfsfs fb sfdfsdfsf sdfd  sfsf sf sdf sff sdfsfdsfsfsfs fb sfdfsdfsf sdfd  sfsf sf sdf sff sdfsfdsfsfsfs fb sfdfsdfsf sdfd  sfsf sf sdf sff sdf   sfdsfsfsfs fb sfdfsdfsf sdfd  sfsf sf sdf sff sdf"
+          android:textColor="@color/colorPrimaryDark"
+          android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+      <TextView
+          android:id="@+id/txt_totalbills"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text=""
+          android:textColor="@color/Dark_Gray"
+          android:textSize="15dp" />
+    </LinearLayout>
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_gravity="right"
+      android:layout_weight="3"
+      android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_amount"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:text="@string/Rs"
+        android:textAlignment="textEnd"
+        android:textColor="@color/red"
+        android:textSize="17dp"
+        tools:ignore="RtlCompat" />
+
+  </LinearLayout>
+
+</LinearLayout>

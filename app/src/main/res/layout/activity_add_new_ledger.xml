@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/newmid"
+    tools:context=".AddNewLedger">
+
+  <LinearLayout
+      android:id="@+id/layout_main"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:paddingLeft="10dp"
+      android:paddingRight="10dp"
+      android:background="@color/newmid"
+      android:weightSum="10">
+
+    <LinearLayout
+        android:id="@+id/layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+      <TextView
+          android:id="@+id/textView8"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+      <android.support.design.widget.TextInputLayout
+          android:id="@+id/inputparty"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/et_partyname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Party Name"
+            android:inputType="textCapSentences"
+
+            android:textColor="@color/Text_Color_Green"/>
+      </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+      <android.support.design.widget.TextInputLayout
+          android:id="@+id/inputadd1"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/et_address1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Address _1"
+            android:inputType="textCapSentences"
+
+            android:textColor="@color/Text_Color_Green"/>
+      </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+      <android.support.design.widget.TextInputLayout
+          android:id="@+id/inputadd2"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/et_address2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Address_2"
+            android:inputType="textCapSentences"
+
+            android:textColor="@color/Text_Color_Green"/>
+      </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_41"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+      <android.support.design.widget.TextInputLayout
+          android:id="@+id/inputpin"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/et_pincode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Pincode"
+            android:inputType="number"
+
+            android:textColor="@color/Text_Color_Green"/>
+      </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+      <android.support.design.widget.TextInputLayout
+          android:id="@+id/inputstate"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+        <AutoCompleteTextView
+            android:id="@+id/atv_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/down_arrow"
+
+            android:completionThreshold="0"
+            android:completionHint="Select a customer"
+            android:gravity="left|center"
+            android:hint=" Select a State"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:inputType="textCapSentences"
+            android:paddingLeft="4dp"
+            android:popupTheme="@color/Transparent" />
+      </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+      <android.support.design.widget.TextInputLayout
+          android:id="@+id/inputcon"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/et_contactno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Contact Number"
+            android:inputType="number"
+
+            android:textColor="@color/Text_Color_Green"/>
+      </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_61"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+      <android.support.design.widget.TextInputLayout
+          android:id="@+id/inputconper"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/et_contactperson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Contact Person"
+            android:inputType="textCapSentences"
+
+            android:textColor="@color/Text_Color_Green"/>
+      </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+      <android.support.design.widget.TextInputLayout
+          android:id="@+id/inputemail"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/et_emailid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:hint="Email_ID"
+            android:inputType="textEmailAddress"
+
+            android:textColor="@color/Text_Color_Green"/>
+      </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_62"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+      <android.support.design.widget.TextInputLayout
+          android:id="@+id/inputgsttype"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+        <AutoCompleteTextView
+            android:id="@+id/atv_gsttype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/down_arrow"
+
+            android:completionThreshold="0"
+            android:completionHint="Select a customer"
+            android:gravity="left|center"
+            android:hint="Registration Type"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:inputType="textCapSentences"
+            android:paddingLeft="4dp"
+            android:popupTheme="@color/Transparent" />
+      </android.support.design.widget.TextInputLayout>
+    </LinearLayout> <LinearLayout
+      android:id="@+id/layout_63"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:orientation="vertical">
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/inputgst"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <EditText
+          android:id="@+id/et_gstno"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:ems="10"
+
+          android:hint="GSTIN Number"
+          android:inputType="textCapSentences"
+          android:textColor="@color/Text_Color_Green" />
+    </android.support.design.widget.TextInputLayout>
+  </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+      <android.support.design.widget.TextInputLayout
+          android:id="@+id/inputpl"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+        <AutoCompleteTextView
+            android:id="@+id/atv_pricelevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/down_arrow"
+
+            android:completionThreshold="0"
+            android:completionHint="Select a price level"
+            android:gravity="left|center"
+            android:hint="Price Level"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:inputType="textCapSentences"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:paddingLeft="4dp"
+            android:popupTheme="@color/Transparent" />
+      </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+
+        android:orientation="vertical">
+
+      <Button
+          android:id="@+id/btn_save"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Save Details"
+          android:textSize="18dp"
+
+          android:background="@color/colorPrimary"
+          />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"></LinearLayout>
+  </LinearLayout>
+</ScrollView>

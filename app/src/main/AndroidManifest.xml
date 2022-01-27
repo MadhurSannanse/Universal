@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="rthree.infotech.r3infotech.mobile">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.Manifest.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.Manifest.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.Manifest.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".AdminCollection"
+            android:exported="false" />
+        <activity
+            android:name=".CollectionReport"
+            android:exported="false" />
+        <activity
+            android:name=".SearchVoucherType"
+            android:exported="false" />
+        <activity
+            android:name=".Confirm_Order"
+            android:label="@string/title_activity_confirm__order"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="rthree.infotech.universal.mobile.ItemDisplayNew" />
+        <activity android:name=".Item_Display" />
+        <activity android:name=".SelectCompany" />
+        <activity android:name=".CashReceipt" />
+        <activity android:name=".AdminCashReceipt" />
+        <activity android:name=".StockReport" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginRequest"
+            android:label="Login Request"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HomeScreen"
+            android:label="@string/title_activity_home_screen"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NewOrder"
+            android:label="New Sale" />
+        <activity
+            android:name=".ItemDisplay"
+            android:label="Inventory"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ConfirmOrder"
+            android:label="Confirm Order"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ViewAllOrders"
+            android:label="Order Reports" />
+        <activity
+            android:name=".PartyOutstanding"
+            android:label="Outstanding" />
+        <activity
+            android:name=".OutstandingDetails"
+            android:label="Outstanding Details" />
+        <activity
+            android:name=".Receipt"
+            android:label="Receipt" />
+        <activity
+            android:name=".AdminViewAllOrders"
+            android:label="All Sales" />
+        <activity
+            android:name=".TeamLeaderViewOrder"
+            android:label="All Sales" />
+        <activity
+            android:name=".ViewSalesmansOrder"
+            android:label="Salesmans Sales" />
+        <activity
+            android:name=".AdminReceiptView"
+            android:label="All Receipts" />
+        <activity
+            android:name=".TeamLederReceiptView"
+            android:label="Salesmans Receipts" />
+        <activity
+            android:name=".ViewAllReceipts"
+            android:label="All Receipts" />
+        <activity
+            android:name=".TaskDetails"
+            android:label="New Task" />
+        <activity
+            android:name=".AdminViewAllTask"
+            android:label="Task Report" />
+        <activity
+            android:name=".TeamLeaderViewAllTask"
+            android:label="Task Report" />
+        <activity
+            android:name=".ViewTaskDetails"
+            android:label="Task Report" />
+        <activity android:name=".PartyLedger" />
+        <activity android:name=".AdminOutstanding" />
+        <activity android:name=".TeamLeaderOutstanding" />
+        <activity android:name=".Item_Autocomplete" />
+        <activity
+            android:name=".AdminReceipt"
+            android:label="Admin Receipt" />
+        <activity
+            android:name=".AdminNewOrder"
+            android:label="Admin Sales" />
+        <activity
+            android:name=".LedgerDetails"
+            android:label="Ledger Details" />
+        <activity
+            android:name=".AdminLedger"
+            android:label="Ledger" />
+        <activity
+            android:name=".TeamLeaderLedger"
+            android:label="Ledger" />
+        <activity
+            android:name=".CaptureImage"
+            android:label="Send Image" />
+        <activity
+            android:name=".AddNewLedger"
+            android:label="New Party" />
+        <activity
+            android:name=".ViewApprovedOrder"
+            android:label="View Order"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SuspendCustomer"
+            android:label="Suspend/Active" />
+        <activity
+            android:name=".ViewSalesmanTarget"
+            android:label="Target And Achievement" />
+        <activity
+            android:name=".TargetDetaiils"
+            android:label="Partywise Details" />
+        <activity
+            android:name=".MultipleTargetView"
+            android:label="Target And Achievement" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/pdf_paths" />
+
+        </provider>
+
+        <service android:name=".MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyFirebaseMessaginService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+  <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_setCompany"
+        android:icon="@drawable/ic_gps_fixed_black_24dp"
+        android:title="Select Company" />
+    <item
+        android:id="@+id/nav_neworder"
+        android:icon="@drawable/ic_neworder"
+        android:title="New Order" />
+    <item
+        android:id="@+id/nav_receipt"
+        android:icon="@drawable/ic_neworder"
+        android:title="Add Receipt" />
+    <item
+        android:id="@+id/nav_stock"
+        android:icon="@drawable/ic_addtask"
+        android:title="Product Stock" />
+    <item
+        android:id="@+id/nav_newledger"
+        android:icon="@drawable/ic_addtask"
+        android:title="New Party" />
+    <item
+        android:id="@+id/nav_susledger"
+        android:icon="@drawable/ic_gps_fixed_black_24dp"
+        android:title="Suspend Party" />
+
+    <item
+        android:id="@+id/nav_orderreport"
+        android:icon="@drawable/ic_menu_gallery"
+        android:title="Order Reports" />
+    <item
+        android:id="@+id/nav_receiptreport"
+        android:icon="@drawable/ic_menu_gallery"
+        android:title="Receipt Reports" />
+    <item
+        android:id="@+id/nav_outstanding"
+        android:icon="@drawable/ic_outstanding"
+        android:title="Outstanding" />
+    <item
+        android:id="@+id/nav_ledger"
+        android:icon="@drawable/ic_partyledger"
+        android:title="Party Ledger" />
+  </group>
+
+  <item android:title="Communicate">
+    <menu>
+      <item
+          android:id="@+id/nav_camera"
+          android:icon="@drawable/ic_menu_camera"
+          android:title="Camera" />
+
+      <item
+          android:id="@+id/nav_exit"
+          android:icon="@drawable/ic_menu_send"
+          android:title="Exit" />
+    </menu>
+  </item>
+
+</menu>

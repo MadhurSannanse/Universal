@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="rthree.infotech.r3infotech.mobile.LoginRequest"
+    tools:showIn="@layout/activity_login_request">
+
+  <LinearLayout
+      android:id="@+id/v_layout_main"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:weightSum="10"
+      android:background="@drawable/loginreqred">
+
+    <LinearLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.5"
+        android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_mid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:weightSum="10">
+
+      <LinearLayout
+          android:id="@+id/layout_mid1"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="5"
+          android:gravity="center_horizontal"
+          android:orientation="horizontal"
+          android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+            android:layout_weight="6.5"
+
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/inputusername"
+              android:layout_width="wrap_content"
+              android:textColorHint="@color/text_color_blue"
+              android:gravity="center_horizontal"
+              android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/txt_username"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:ems="12"
+                android:hint="User Name"
+                android:inputType="textCapSentences"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/text_color_blue"
+                android:textSize="20dp" />
+          </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/layout_mid2"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="5"
+          android:orientation="horizontal"
+          android:gravity="center_horizontal"
+          android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6.5"
+
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+          <com.google.android.material.textfield.TextInputLayout
+              android:id="@+id/inputcontactno"
+              android:layout_height="wrap_content"
+              android:textColorHint="@color/text_color_blue"
+              android:gravity="center_horizontal"
+              android:layout_width="wrap_content">
+            <EditText
+                android:id="@+id/txt_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text=""
+                android:gravity="center_horizontal"
+                android:ems="12"
+                android:inputType="number"
+                android:hint="Contact Number"
+                android:textColor="@color/text_color_blue"
+                android:textAlignment="center"/>
+          </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+      </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_bot"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+      <LinearLayout
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="7.3"
+          android:gravity="center"
+          android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_useas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="    Use As Demo"
+            android:textSize="20sp"
+            android:fontFamily="@string/myriad_pro"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"/>
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="2.7"
+          android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/btn_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/login1" />
+      </LinearLayout>
+    </LinearLayout>
+  </LinearLayout>
+</RelativeLayout>

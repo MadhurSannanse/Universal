@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config>
+        <domain includeSubdomains="true">www.r3infoservices.com/offline/trueview</domain>
+
+        <trust-anchors>
+            <certificates src=""/>
+        </trust-anchors>
+    </domain-config>
+</network-security-config>

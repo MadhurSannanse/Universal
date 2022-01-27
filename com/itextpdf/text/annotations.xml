@@ -1,0 +1,5 @@
+<root>
+    <item name='com.itextpdf.text.Font BOLD'>
+        <annotation name='java.lang.Deprecated' />
+    </item>
+</root>
